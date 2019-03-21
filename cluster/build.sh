@@ -110,11 +110,11 @@ fn__dotnetcore_deployment () {
 
 run () {
   set -x
-  #fn__create_resource_group
-  #fn__create_cluster
-  #fn__get_credentials
-  #fn__login_container_registry
-  #fn__grant_access_to_container_registry
+  fn__create_resource_group
+  fn__create_cluster
+  fn__get_credentials
+  fn__login_container_registry
+  fn__grant_access_to_container_registry
 
   fn__build_and_push_nodejs_service
   fn__nodejs_deployment
